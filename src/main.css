@@ -7,11 +7,16 @@ html {
 
 body {
   font-family: Inter, sans-serif;
-  background-color: #282d35 !important;
 }
 
 header {
   background-color: #21222a;
+  padding: 3rem;
+}
+
+.header.light {
+  background-color: white;
+  box-shadow: 0px 10px 30px black;
 }
 .nav-img {
   width: 3rem;
@@ -27,4 +32,67 @@ header {
 li::marker {
   color: #61dafb;
   font-size: 1.4rem;
+}
+.toggler--slider {
+  width: 3.7rem;
+  background: white;
+  height: 1.3rem;
+  border-radius: 1rem;
+  position: relative;
+  transition: 1s;
+}
+
+.header.light .toggler--slider {
+  background-color: #21222a;
+}
+
+.toggler--slider--circle {
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.3rem;
+  transition: 1s;
+  background-color: #21222a;
+  cursor: pointer;
+}
+
+.header.light .toggler--slider--circle {
+  background-color: white;
+  right: 38px;
+}
+
+.toggler--dark,
+.toggler--light {
+  transition: 1s;
+  color: white;
+  font-weight: bold;
+}
+.toggler--dark {
+  opacity: 1;
+}
+.toggler--light {
+  opacity: 0.5;
+}
+.header.light .toggler--dark {
+  opacity: 0.5;
+  color: black;
+}
+.header.light .toggler--light {
+  opacity: 1;
+  color: black;
+}
+
+.main {
+  color: white;
+  padding: 3rem;
+  transition: 1s;
+  height: 100vh;
+  background-color: #282d35;
+}
+
+.main.light {
+  color: black !important;
+  background-color: white;
 }
